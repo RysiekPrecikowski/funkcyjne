@@ -1,6 +1,6 @@
 main :: IO ()
 main = do {
-    putStrLn "heloł!" ;
+    putStrLn "hello!" ;
 
     return ()
 }
