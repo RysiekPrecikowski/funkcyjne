@@ -1,3 +1,4 @@
+{-# LANGUAGE ConstraintKinds #-}
 -- 4
 vec3DLen :: (Double, Double, Double) -> Double
 vec3DLen (x, y, z) = sqrt(x^2 + y^2 + z^2)
@@ -75,7 +76,7 @@ xor' _              = True
 
 --8
 isItTheAnswer :: String -> Bool
-isItTheAnswer (s) = case (s) of
+isItTheAnswer s = case s of
     "Love" -> True -- :)
     _      -> False
 
@@ -156,3 +157,5 @@ roots (a, b, c) =
      e = 2 * a;
  }
  in ( (-b - d) / e, (-b + d) / e )
+
+
